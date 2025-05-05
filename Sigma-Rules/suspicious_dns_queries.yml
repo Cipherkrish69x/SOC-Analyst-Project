@@ -1,0 +1,23 @@
+title: Detect Suspicious DNS Queries
+id: 713f5a90-8a16-4f36-9de5-65f4d3a3f8d6
+status: experimental
+description: Detects DNS queries to suspicious domains or IP addresses.
+author: Alla Krishna Vamsi Reddy (cipherkrish69x)
+logsource:
+  category: network
+detection:
+  selection:
+    QueryName|contains:
+      - ".xyz"
+      - ".top"
+      - ".ru"
+  condition: selection
+fields:
+  - QueryName
+  - SourceIP
+falsepositives:
+  - Legitimate DNS queries to newly registered domains.
+level: medium
+tags:
+  - attack.t1071
+  - attack.mitre
