@@ -1,0 +1,21 @@
+title: Detect Brute Force Attempts
+id: d4049cb1-b5de-4e44-91db-6b9f5b5db1cf
+status: experimental
+description: Detects brute force attempts based on failed login events.
+author: Alla Krishna Vamsi Reddy (cipherkrish69x)
+logsource:
+  category: authentication
+detection:
+  selection:
+    EventID: 4625
+  condition: selection
+fields:
+  - AccountName
+  - TargetUserName
+  - FailureReason
+falsepositives:
+  - Multiple failed login attempts due to forgotten password.
+level: high
+tags:
+  - attack.t1071
+  - attack.mitre
