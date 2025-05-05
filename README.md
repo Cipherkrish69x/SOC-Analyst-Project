@@ -57,7 +57,6 @@ The **SOC Analyst Project** integrates multiple components to monitor, detect, a
    ```bash
    git clone https://github.com/Cipherkrish69x/SOC-Analyst-Project.git
    cd SOC-Analyst-Project
-````
 
 2. **Set up Elastic Stack**:
 
@@ -207,8 +206,6 @@ For queries, suggestions, or collaborations:
 🔗 LinkedIn: [cipherkrish69x](https://www.linkedin.com/in/krishnavamsireddy)
 
 ```
-
----
 
 Let me know if you'd like this saved as a downloadable `.md` file or if you want a version with clickable links and badges (like stars, forks, tools used, etc.) to make it more GitHub-ready.
 ```
