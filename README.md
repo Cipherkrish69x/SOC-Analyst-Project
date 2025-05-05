@@ -1,6 +1,3 @@
-Sure! Here's the `README.md` with your details properly added:
-
-````markdown
 # SOC Analyst Project by Alla Krishna Vamsi Reddy (cipherkrish69x)
 
 This project demonstrates a **comprehensive Security Operations Center (SOC)** setup designed to enable **real-time threat detection**, automated responses, and seamless **SIEM (Security Information and Event Management)** integration. The project includes **Sigma detection rules**, attack simulations, and a variety of tools for automating security workflows, providing hands-on experience with industry-standard SOC practices.
