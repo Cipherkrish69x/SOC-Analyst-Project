@@ -1,0 +1,21 @@
+title: Detect Process Injection Attempts
+id: 3b9786cc-e9b1-4b57-b6be-1a6e9e95ea1e
+status: experimental
+description: Detects possible process injection attempts based on suspicious activity.
+author: Alla Krishna Vamsi Reddy (cipherkrish69x)
+logsource:
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains: "inject"
+    ParentImage|endswith: "\svchost.exe"
+  condition: selection
+fields:
+  - CommandLine
+  - ParentImage
+falsepositives:
+  - Legitimate scripts using inject functionality.
+level: high
+tags:
+  - attack.t1055
+  - attack.mitre
