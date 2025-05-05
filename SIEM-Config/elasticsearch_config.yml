@@ -1,0 +1,17 @@
+# ElasticSearch configuration for SOC Analyst project
+
+input:
+  type: log
+  paths:
+    - /var/log/auth.log
+    - /var/log/syslog
+    - /var/log/secure
+    - /path/to/your/soc/logs
+
+output:
+  elasticsearch:
+    hosts:
+      - "http://localhost:9200"
+    index: "soc_logs"
+    user: "elastic"
+    password: "your_password"
