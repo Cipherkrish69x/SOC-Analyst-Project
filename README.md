@@ -1,11 +1,8 @@
-# SOC Analyst Project
+# SOC Analyst Project by Alla Krishna Vamsi Reddy (cipherkrish69x)
 
 ## Overview
 
 This project demonstrates a comprehensive **Security Operations Center (SOC)** setup designed for real-time threat monitoring, detection, and automated responses. It includes Sigma detection rules for various attack techniques, attack simulations, automated response scripts, and SIEM (Security Information and Event Management) integration. This project aims to provide hands-on experience with the tools and techniques used in a professional SOC environment.
-
-## Project by: 
-**Alla Krishna Vamsi Reddy (cipherkrish69x)**
 
 ---
 
